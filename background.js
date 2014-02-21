@@ -5,7 +5,7 @@ var srlAPI = "https://api.twitch.tv/kraken/streams/dvcolgansrl",
 
 var checkAPI = function(){
 	$.ajax({
-		url: srlAPI,
+		url: normalAPI,
 	}).done(function(data){
 		if(data.stream != null){
 			var notification = webkitNotifications.createNotification(
@@ -26,7 +26,7 @@ var checkAPI = function(){
 	});
 
 	$.ajax({
-		url: normalAPI,
+		url: srlAPI,
 	}).done(function(data){
 		if(data.stream != null){
 			var notification = webkitNotifications.createNotification(
