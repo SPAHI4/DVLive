@@ -3,7 +3,7 @@
 
 	"name": "DVLive",
 	"description": "Provides a notification when David Colgan is live on Twitch.tv!",
-	"version": "0.1.2",
+	"version": "0.2.0",
 
 	"permissions": [
 		"https://api.twitch.tv/",
