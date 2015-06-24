@@ -19,18 +19,18 @@ function showNotifiction() {
 
 function updateStatus(stream) {
 	if (stream == null) {
-		$status.html("DVColgan is currently offline.");
+		$status.html("Pomgoo is currently offline.");
 		$status.removeClass("larger");
 		return;
 	} else {
-		$status.html("DVColgan is live with \"" + stream.channel.status + "\"<br>");
-		$status.append("<a href=\"http://twitch.tv/dvcolgan\"><img src=\"" + stream.preview.medium + "\"></a>");
+		$status.html("Pomgoo is live with \"" + stream.channel.status + "\"<br>");
+		$status.append("<a href=\"http://twitch.tv/pomgoo\"><img src=\"" + stream.preview.medium + "\"></a>");
 		$status.addClass("larger");
 	}
 }
 
-getStream("dvcolgan");
+getStream("pomgoo");
 
 setInterval(function() {
-	getStream("dvcolgan");
+	getStream("pomgoo");
 }, 5000);
