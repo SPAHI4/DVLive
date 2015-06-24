@@ -28,5 +28,5 @@ chrome.notifications.onClicked.addListener(function(){
 });
 
 setInterval(function() {
-	getStream("dvcolgan");
+	getStream("pomgoo");
 }, 5000);
