@@ -9,7 +9,7 @@ function getStream(channel) {
 function update(stream) {
 	if (stream != null && !notified) {
 		chrome.notifications.create(
-			"", {
+			"pomgoo", {
 				type: "basic",
 				title: "Pomgoo online!",
 				message: "Pomgoo is live with \"" + stream.channel.status + "\"",
@@ -22,6 +22,10 @@ function update(stream) {
 }
 
 getStream("pomgoo");
+
+chrome.notifications.onClicked.addListener(function(){
+	 chrome.tabs.create({url : 'http://twitch.tv/pomgoo'});
+});
 
 setInterval(function() {
 	getStream("dvcolgan");
