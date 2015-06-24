@@ -11,8 +11,8 @@ function update(stream) {
 		chrome.notifications.create(
 			"", {
 				type: "basic",
-				title: "DVColgan is live!",
-				message: "DVColgan is live with \"" + stream.channel.status + "\"",
+				title: "Pomgoo online!",
+				message: "Pomgoo is live with \"" + stream.channel.status + "\"",
 				iconUrl: "icon.png"
 			}, function() {}
 		);
@@ -21,7 +21,7 @@ function update(stream) {
 	notified = (stream != null);
 }
 
-getStream("dvcolgan");
+getStream("pomgoo");
 
 setInterval(function() {
 	getStream("dvcolgan");
